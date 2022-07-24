@@ -20,3 +20,9 @@ CREATE TABLE
     budget_plans_id INT NOT NULL,
     FOREIGN KEY (budget_plans_id) REFERENCES budget_plans(plan_id)
   ) engine = InnoDB;
+
+CREATE TABLE
+  artists(
+    artist_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    artist_name VARCHAR(50) NOT NULL
+  ) engine = InnoDB;
