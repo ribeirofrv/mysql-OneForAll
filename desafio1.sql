@@ -97,3 +97,17 @@ VALUES
   ('Freedie Shannon'),
   ('Tyler Isle'),
   ('Fog');
+
+INSERT INTO
+  albums (title, release_year, artist_id)
+VALUES
+  ('Envious', 1990, 1),
+  ('Exuberant', 1993, 1),
+  ('Hallowed', 1995, 2),
+  ('Incandescent', 1998, 3),
+  ('Temporary Culture', 2001, 4),
+  ('Library of liberty', 2003, 4),
+  ('Chained Down', 2007, 5),
+  ('Cabinet of fools', 2012, 5),
+  ('No guarantees', 2015, 5),
+  ('Apparatus', 2015, 6);
