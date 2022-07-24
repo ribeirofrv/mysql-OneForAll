@@ -46,3 +46,13 @@ CREATE TABLE
     FOREIGN KEY (artist_id) REFERENCES artists(artist_id),
     FOREIGN KEY (album_id) REFERENCES albums(album_id)
   ) engine = InnoDB;
+
+CREATE TABLE
+  history(
+    user_id INT NOT NULL,
+    track_id INT NOT NULL,
+    reproduction_date DATETIME NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (track_id) REFERENCES songs(track_id),
+    CONSTRAINT PRIMARY KEY (user_id, track_id)
+  ) engine = InnoDB;
