@@ -65,3 +65,11 @@ CREATE TABLE
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     CONSTRAINT PRIMARY KEY (artist_id, user_id)
   ) engine = InnoDB;
+
+INSERT INTO
+  budget_plans (plan_name, price)
+VALUES
+  ('gratuito', 0.00),
+  ('pessoal', 6.99),
+  ('universitário', 5.99),
+  ('familiar', 7.99);
