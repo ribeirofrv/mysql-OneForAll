@@ -56,3 +56,12 @@ CREATE TABLE
     FOREIGN KEY (track_id) REFERENCES songs(track_id),
     CONSTRAINT PRIMARY KEY (user_id, track_id)
   ) engine = InnoDB;
+
+CREATE TABLE
+  followers(
+    artist_id INT NOT NULL,
+    user_id INT NOT NULL,
+    FOREIGN KEY (artist_id) REFERENCES artists(artist_id),
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    CONSTRAINT PRIMARY KEY (artist_id, user_id)
+  ) engine = InnoDB;
