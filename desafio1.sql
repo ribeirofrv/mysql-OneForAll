@@ -8,7 +8,7 @@ CREATE TABLE
   budget_plans(
     plan_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     plan_name VARCHAR(50) NOT NULL,
-    price DECIMAL(2,2) NOT NULL
+    price DECIMAL(3,2) NOT NULL
   ) engine = InnoDB;
 
 CREATE TABLE
