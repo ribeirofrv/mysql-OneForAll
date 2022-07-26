@@ -5,10 +5,10 @@ CREATE DATABASE SpotifyClone;
 USE SpotifyClone;
 
 CREATE TABLE
-  budget_plans(
+  signature_plans(
     plan_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     plan_name VARCHAR(50) NOT NULL,
-    price DECIMAL(3,2) NOT NULL
+    price DECIMAL(3, 2) NOT NULL
   ) engine = InnoDB;
 
 CREATE TABLE
@@ -17,8 +17,8 @@ CREATE TABLE
     user_name VARCHAR(50) NOT NULL,
     age INT NOT NULL,
     signature_date DATE NOT NULL,
-    budget_plans_id INT NOT NULL,
-    FOREIGN KEY (budget_plans_id) REFERENCES budget_plans(plan_id)
+    signature_plans_id INT NOT NULL,
+    FOREIGN KEY (signature_plans_id) REFERENCES signature_plans(plan_id)
   ) engine = InnoDB;
 
 CREATE TABLE
@@ -67,15 +67,15 @@ CREATE TABLE
   ) engine = InnoDB;
 
 INSERT INTO
-  budget_plans (plan_name, price)
+  signature_plans (plan_name, price)
 VALUES
   ('gratuito', 0.00),
-  ('pessoal', 6.99),
   ('universitário', 5.99),
+  ('pessoal', 6.99),
   ('familiar', 7.99);
 
 INSERT INTO
-  users (user_name, age, budget_plans_id, signature_date)
+  users (user_name, age, signature_plans_id, signature_date)
 VALUES
   ('Thati', 23, 1, '2019-10-20'),
   ('Cintia', 35, 2, '2017-12-30'),
