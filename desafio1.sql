@@ -103,7 +103,7 @@ INSERT INTO
 VALUES
   ('Envious', 1990, 1),
   ('Exuberant', 1993, 1),
-  ('Hallowed', 1995, 2),
+  ('Hallowed Steam', 1995, 2),
   ('Incandescent', 1998, 3),
   ('Temporary Culture', 2001, 4),
   ('Library of liberty', 2003, 4),
