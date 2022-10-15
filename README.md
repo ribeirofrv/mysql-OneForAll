@@ -1,5 +1,5 @@
 # One For All
-> Projeto realizado durante o curso de Desenvolvimento Web da Trybe utilizando <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
+> Projeto realizado durante o curso de Desenvolvimento Web da Trybe utilizando <img src="https://img.shields.io/badge/MySQL-005C84??style=for-the-badge&logo=mysql&logoColor=white" />
 ## :dart: Desafio do projeto: 
 Através de uma tabela não normalizada semelhante ao que poderia ser uma versão simplificada do banco de dados do Spotify.
 - Normalize a tabela [SpotifyClone](SpotifyClone-Non-NormalizedTable.xlsx) na terceira forma normal, crie o schema no seu banco de dados local e acesse as informações desta tabela através de `queries` utilizando `SQL`.
@@ -11,7 +11,7 @@ Através de uma tabela não normalizada semelhante ao que poderia ser uma versã
 ![Diagrama](data/drawSQL-export-2022-07-27_23_54.png)
 ##### Utilizando Google Sheets e DrawSQL
 #
-### Checklist
+## 📝 Checklist
 > * [x]  **Crie um banco com o nome de SpotifyClone.**
 >   
 >   * Providencie as queries necessárias para criar tabelas normalizadas que atendam aos requisitos descritos na seção anterior;
